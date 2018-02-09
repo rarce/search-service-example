@@ -12,8 +12,10 @@ docker-compose up -d
 The example documents are in the `sample-data` directory, the `models.json` file include a sample list of models for brazilian car from (ComparaOnline)[comparaonline.com.br], to load this data in the elasticsearch server can be use the python script `load_models.py` so:
 
 ```
-# install dependencies
-pip install
+# change dir
+cd data_loader
+# install requirements
+pip install -r requirements.txt
 # run script
 python load_models.py
 ```
